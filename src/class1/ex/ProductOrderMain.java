@@ -27,7 +27,7 @@ public class ProductOrderMain {
         int totalPrice = 0;
         for (ProductOrder productOrder : productOrders) {
             System.out.println("상품명: " + productOrder.productName + ", 가격: " + productOrder.productName + ", 수량: " + productOrder.quantity);
-            totalPrice += (productOrder.price)*(productOrder.quantity);
+            totalPrice += (productOrder.price) * (productOrder.quantity);
         }
         System.out.println("총 결제 금액: " + totalPrice);
 
