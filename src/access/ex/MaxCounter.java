@@ -1,10 +1,8 @@
 package access.ex;
 
-import java.sql.SQLOutput;
-
 public class MaxCounter {
-    int count = 0;
-    int max;
+    private int count = 0;
+    private int max;
 
     public MaxCounter(int max) {
         this.max = max;
