@@ -7,9 +7,15 @@ public class DecoData {
 
     public static void staticCall() {
 //        instanceValue++; //static 메소드에서는 인스턴스변수 접근 불가
-//        instanceMethod();//static메소드에서는 인스턴스메소드 접근 불가
+//        instanceMethod();//static 메소드에서는 인스턴스메소드 접근 불가
         staticValue++;
         staticMethod();
+    }
+
+    public static void staticCall(DecoData data){
+        //static 메소드이지만 참조값이 있으므로 인스턴스 변수, 인스턴스 메소드 접근 가능
+        data.instanceValue ++;
+        data.instanceMethod();
     }
 
     public void instanceCall() {
